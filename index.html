@@ -18,10 +18,18 @@
 <body>
   <div id="page">
     <header>
-      <img src="./images/image1.png" alt="Astronauta flutuando ao redor de cinco planetas no espaço">
-      <h1>Explore sem limites</h1>
-      <p>Porque o aprendizado é contínuo</p>
-      <img src="./images/image2.svg" alt="Seta de cor rosa e envolta de uma linha também rosa apontando para baixo" class="img-arrow">
+      <img 
+        src="./images/image1.png" 
+        alt="Astronauta flutuando ao redor de cinco planetas no espaço"
+        class="img-astronaut">
+      <div class="text-wrapper">
+        <h1>Explore sem limites</h1>
+        <p>Porque o aprendizado é contínuo</p>
+        <img
+          src="./images/image2.svg"
+          alt="Seta de cor rosa e envolta de uma linha também rosa apontando para baixo"
+          class="img-arrow" />
+      </div>
     </header>
 
     <main>
@@ -66,13 +74,13 @@
               <label for="name">
                 <img src="./images/image6.svg" alt="Icone de uma pessoa">
               </label>
-              <input type="text" id="name" placeholder="Seu nome">
+              <input type="text" id="name" placeholder="Seu nome" minlength="6" required>
             </div>
             <div class="input-wrapper">
               <label for="email">
                 <img src="./images/image7.svg" alt="Símbolo do arroba">
               </label>
-              <input type="text" id="email" placeholder="Email">
+              <input type="email" id="email" placeholder="Email" required>
             </div>
             <textarea placeholder="Digite sua mensagem aqui..."></textarea>
             <button>Enviar mensagem</button>
